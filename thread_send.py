@@ -14,10 +14,10 @@ class threadSend(threading.Thread):
                 if resp is not None:
                     self.ws.send(resp)
                 else:
-                    print 'sock close,ws'
+                    print('sock close,ws')
                     self.ws.close()
             except:
-                print 'exception sock close'
+                print('exception sock close')
                 self.ws.close()
                 break
 
